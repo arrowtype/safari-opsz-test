@@ -1,6 +1,6 @@
 # Safari Optical Size Error Report
 
-GitHub repo for a WebKit/Safari Error Report.
+GitHub repo for a WebKit/Safari Error Report: https://bugs.webkit.org/show_bug.cgi?id=258944
 
 See https://arrowtype.github.io/safari-opsz-test for a live browser test.
 
