@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Opsz Test: Fraunces</title>
+    <style>
+        @font-face {
+            font-family: "Fraunces";
+            src: url("Fraunces[SOFT,WONK,opsz,wght].ttf");
+            font-weight: 100 900;
+        }
+        :root {
+            --opsz: 14;
+        }
+        html {
+            font-family: "Fraunces", fantasy;
+        }
+        .opsz-test {
+            font-size: 6vw;
+            font-weight: 900;
+            font-variation-settings: "opsz" var(--opsz);
+            line-height: 1;
+            margin: 0;
+        }
+        .problem {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="opsz-test" style="--opsz: 9;">Fraunces Optical Size 9 <span class="problem">←</span></p>
+    <p class="opsz-test" style="--opsz: 144;">Fraunces Optical Size 144</p>
+    <p class="opsz-test" style="--opsz: 10;">Fraunces Optical Size 10</p>
+    <p class="opsz-test" style="--opsz: 11;">Fraunces Optical Size 11</p>
+    <p class="opsz-test" style="--opsz: 12;">Fraunces Optical Size 12</p>
+    <p class="opsz-test" style="--opsz: 13;">Fraunces Optical Size 13</p>
+    <p class="opsz-test" style="--opsz: 14;">Fraunces Optical Size 14</p>
+</body>
+</html>

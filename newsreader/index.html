@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Opsz Test: Newsreader</title>
+    <style>
+        @font-face {
+            font-family: "Newsreader";
+            src: url("Newsreader[opsz,wght].ttf");
+            font-weight: 200 800;
+        }
+        :root {
+            --opsz: 14;
+        }
+        html {
+            font-family: "Newsreader", fantasy;
+        }
+        .opsz-test {
+            font-size: 6vw;
+            font-weight: 400;
+            font-variation-settings: "opsz" var(--opsz);
+            line-height: 1;
+            margin: 0;
+        }
+        .problem {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="opsz-test" style="--opsz: 14;">Newsreader Optical Size 14</p>
+    <p class="opsz-test" style="--opsz: 15;">Newsreader Optical Size 15</p>
+    <p class="opsz-test" style="--opsz: 16;">Newsreader Optical Size 16</p>
+    <p class="opsz-test" style="--opsz: 17;">Newsreader Optical Size 17</p>
+    <p class="opsz-test" style="--opsz: 18;">Newsreader Optical Size 18 <span class="problem">←</span></p>
+    <p class="opsz-test" style="--opsz: 72;">Newsreader Optical Size 72</p>
+    <p class="opsz-test" style="--opsz: 19;">Newsreader Optical Size 19</p>
+    <p class="opsz-test" style="--opsz: 20;">Newsreader Optical Size 20</p>
+</body>
+</html>

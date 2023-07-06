@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Opsz Test: Roboto Flex</title>
+    <style>
+        @font-face {
+            font-family: "RobotoFlex";
+            src: url("RobotoFlex-VariableFont_GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf");
+            font-weight: 100 1000;
+        }
+        :root {
+            --opsz: 14;
+        }
+        html {
+            font-family: "RobotoFlex", fantasy;
+        }
+        .opsz-test {
+            font-size: 6vw;
+            font-weight: 400;
+            font-variation-settings: "opsz" var(--opsz);
+            line-height: 1;
+            margin: 0;
+        }
+        .problem {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="opsz-test" style="--opsz: 11;">Roboto Flex Optical Size 11</p>
+    <p class="opsz-test" style="--opsz: 12;">Roboto Flex Optical Size 12</p>
+    <p class="opsz-test" style="--opsz: 13;">Roboto Flex Optical Size 13</p>
+    <p class="opsz-test" style="--opsz: 14;">Roboto Flex Optical Size 14 <span class="problem">←</span></p>
+    <p class="opsz-test" style="--opsz: 144;">Roboto Flex Optical Size 144</p>
+    <p class="opsz-test" style="--opsz: 15;">Roboto Flex Optical Size 15</p>
+    <p class="opsz-test" style="--opsz: 16;">Roboto Flex Optical Size 16</p>
+</body>
+</html>
