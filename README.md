@@ -14,7 +14,9 @@ This is tested in Roboto Flex, Roboto Serif, Newsreader, Fraunces, and other var
 
 Another simple way to test this is to load such font into [Wakamai Fondue](https://wakamaifondue.com/beta/). It has type testers that are set to the font’s defaults.
 
-Please note: in the current main Safari, there are other `opsz` inconsistencies. For example, if you go to a font’s max `opsz`, the rendered font weight will suddenly be the min `wght`. So, please test for that while fixing this, and don’t e.g. simply revert changes to opsz handling (not that I think you would, but there have been problems here for awhile, so I want to suggest care in addressing it).
+Please note: in the current main Safari, there are other `opsz` inconsistencies. For example, if you go to a font’s max `opsz`, the rendered font weight will suddenly be the min `wght`. So, please test for that while fixing this, and don’t e.g. simply revert changes to opsz handling (not that I think you would do so, but there have been problems here for awhile, so please be careful but also quick, if possible, in addressing it).
+
+WebKit folks: thanks so much for all your work here!
 
 ## Screenshots
 
