@@ -18,23 +18,29 @@
             font-family: "RobotoFlex", fantasy;
         }
         .opsz-test {
-            font-size: 6vw;
+            font-size: 64px;
             font-weight: 400;
             font-variation-settings: "opsz" var(--opsz);
             line-height: 1;
             margin: 0;
         }
-        .problem {
+        .problem:after {
+            content: " ←";
             color: red;
+        }
+        .comparison {
+            color: gray;
         }
     </style>
 </head>
 <body>
+    <h1>WebKit Error Report. Renders unexpectedly in Safari 17.0</h1>
+    <h2>See <a href="https://github.com/arrowtype/safari-opsz-test">github.com/arrowtype/safari-opsz-test</a> for details.</h2>
     <p class="opsz-test" style="--opsz: 11;">Roboto Flex Optical Size 11</p>
     <p class="opsz-test" style="--opsz: 12;">Roboto Flex Optical Size 12</p>
     <p class="opsz-test" style="--opsz: 13;">Roboto Flex Optical Size 13</p>
-    <p class="opsz-test" style="--opsz: 14;">Roboto Flex Optical Size 14 <span class="problem">←</span></p>
-    <p class="opsz-test" style="--opsz: 144;">Roboto Flex Optical Size 144</p>
+    <p class="opsz-test problem" style="--opsz: 14;">Roboto Flex Optical Size 14</p>
+    <p class="opsz-test comparison" style="--opsz: 64;">Roboto Flex Optical Size 64</p>
     <p class="opsz-test" style="--opsz: 15;">Roboto Flex Optical Size 15</p>
     <p class="opsz-test" style="--opsz: 16;">Roboto Flex Optical Size 16</p>
 </body>

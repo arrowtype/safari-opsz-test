@@ -18,20 +18,26 @@
             font-family: "Fraunces", fantasy;
         }
         .opsz-test {
-            font-size: 6vw;
+            font-size: 64px;
             font-weight: 900;
             font-variation-settings: "opsz" var(--opsz);
             line-height: 1;
             margin: 0;
         }
-        .problem {
+        .problem:after {
+            content: " ←";
             color: red;
+        }
+        .comparison {
+            color: gray;
         }
     </style>
 </head>
 <body>
-    <p class="opsz-test" style="--opsz: 9;">Fraunces Optical Size 9 <span class="problem">←</span></p>
-    <p class="opsz-test" style="--opsz: 144;">Fraunces Optical Size 144</p>
+    <h1>WebKit Error Report. Renders unexpectedly in Safari 17.0</h1>
+    <h2>See <a href="https://github.com/arrowtype/safari-opsz-test">github.com/arrowtype/safari-opsz-test</a> for details.</h2>
+    <p class="opsz-test problem" style="--opsz: 9;">Fraunces Optical Size 9</p>
+    <p class="opsz-test comparison" style="--opsz: 64;">Fraunces Optical Size 64</p>
     <p class="opsz-test" style="--opsz: 10;">Fraunces Optical Size 10</p>
     <p class="opsz-test" style="--opsz: 11;">Fraunces Optical Size 11</p>
     <p class="opsz-test" style="--opsz: 12;">Fraunces Optical Size 12</p>

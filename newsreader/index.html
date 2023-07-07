@@ -18,24 +18,30 @@
             font-family: "Newsreader", fantasy;
         }
         .opsz-test {
-            font-size: 6vw;
+            font-size: 64px;
             font-weight: 400;
             font-variation-settings: "opsz" var(--opsz);
             line-height: 1;
             margin: 0;
         }
-        .problem {
+        .problem:after {
+            content: " ←";
             color: red;
+        }
+        .comparison {
+            color: gray;
         }
     </style>
 </head>
 <body>
+    <h1>WebKit Error Report. Renders unexpectedly in Safari 17.0</h1>
+    <h2>See <a href="https://github.com/arrowtype/safari-opsz-test">github.com/arrowtype/safari-opsz-test</a> for details.</h2>
     <p class="opsz-test" style="--opsz: 14;">Newsreader Optical Size 14</p>
     <p class="opsz-test" style="--opsz: 15;">Newsreader Optical Size 15</p>
     <p class="opsz-test" style="--opsz: 16;">Newsreader Optical Size 16</p>
     <p class="opsz-test" style="--opsz: 17;">Newsreader Optical Size 17</p>
-    <p class="opsz-test" style="--opsz: 18;">Newsreader Optical Size 18 <span class="problem">←</span></p>
-    <p class="opsz-test" style="--opsz: 72;">Newsreader Optical Size 72</p>
+    <p class="opsz-test problem" style="--opsz: 18;">Newsreader Optical Size 18</p>
+    <p class="opsz-test comparison" style="--opsz: 64;">Newsreader Optical Size 64</p>
     <p class="opsz-test" style="--opsz: 19;">Newsreader Optical Size 19</p>
     <p class="opsz-test" style="--opsz: 20;">Newsreader Optical Size 20</p>
 </body>
