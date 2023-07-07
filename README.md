@@ -24,6 +24,8 @@ WebKit folks: thanks so much for all your work here!
 
 This issue should be fixed, but until it is, it seems that adding `font-optical-sizing: none;` along with the `font-variation-settings` will allow the `opsz` to be specifically set, even for its default value.
 
+It is **not** recommended to simply add `font-optical-sizing: none;` to a webpage generally, because auto optical sizing is a great thing, and it works well most of the time.
+
 ## Screenshots
 
 ![Safari Optical Size issue, Fraunces](images/safari-issue-opsz-fraunces.png)
